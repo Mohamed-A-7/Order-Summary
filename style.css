@@ -114,3 +114,18 @@ p.cancel {
   text-decoration: none;
   transition: 0.5s;
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: normal;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, green, yellow);
+}
+
+span {
+  color: red;
+}
