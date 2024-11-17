@@ -43,7 +43,7 @@ main {
   max-width: 320px;
   background-color: white;
   text-align: center;
-  min-width: 300;
+  min-width: 300px;
 }
 
 main > div {
