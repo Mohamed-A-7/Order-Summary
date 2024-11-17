@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* ### Primary */
+
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+  /* ### Neutral */
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: "Fraunces";
+  background-image: url(./images/pattern-background-mobile.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #dfe8ff;
+}
+
+@media (min-width: 767px) {
+  body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -140px;
+  }
+}
+
+main {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 20px;
+  max-width: 320px;
+  background-color: white;
+  text-align: center;
+  min-width: 300;
+}
+
+main > div {
+  padding: 20px;
+}
+main > div > *:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+h1.order {
+  font-size: 23px;
+  font-weight: 500;
+  color: var(--Dark-blue);
+}
+
+p.context {
+  color: var(--Desaturated-blue);
+  line-height: 140%;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+div.plan {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  padding: 13px 10px;
+  background-color: var(--Very-pale-blue);
+  border-radius: 10px;
+}
+
+div.plan img {
+  width: 38px;
+}
+
+div.plan .price {
+  line-height: 140%;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+div.plan a {
+  margin-left: auto;
+  color: var(--Bright-blue);
+}
+
+button {
+  border: none;
+  width: 100%;
+  padding: 13px;
+  font-size: 15px;
+  box-shadow: 0px 10px 15px lightgrey;
+  color: white;
+  border-radius: 10px;
+  background-color: var(--Bright-blue);
+  margin-bottom: 17px !important;
+}
+
+p.cancel {
+  color: var(--Dark-blue);
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.hover:hover {
+  opacity: 0.8;
+  text-decoration: none;
+  transition: 0.5s;
+}
